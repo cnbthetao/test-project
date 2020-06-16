@@ -1,2 +1,2 @@
 # test-project
-just a test
+just a test这只是一个测试
