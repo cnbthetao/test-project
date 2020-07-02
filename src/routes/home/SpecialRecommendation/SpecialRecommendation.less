@@ -1,0 +1,133 @@
+@import '../../../assets/style/border.less';
+
+.active_box {
+    display   : block;
+    margin-top: .15rem;
+    text-align: center;
+    background: white;
+
+    img {
+        width     : 100%;
+        min-height: 1.1rem;
+        min-width : 1.1rem;
+    }
+
+    .info {
+        padding   : .24rem .24rem .28rem .24rem;
+        box-sizing: border-box;
+
+        .desc {
+            font-size    : .2rem;
+            color        : #333;
+            white-space  : nowrap;
+            overflow     : hidden;
+            text-overflow: ellipsis;
+        }
+
+        .name {
+            margin-top   : .07rem;
+            font-size    : .13rem;
+            color        : #999;
+            overflow     : hidden;
+            text-overflow: ellipsis;
+            text-align   : center !important;
+        }
+    }
+}
+
+.product {
+    width           : 100%;
+    margin-top      : 15px;
+    border-bottom   : 1px solid #eee;
+    background-color: #fff;
+    position        : relative;
+
+    .pic {
+        position: relative;
+        overflow: hidden;
+
+        img {
+            width     : 100%;
+            min-height: 110px;
+            min-width : 110px;
+            border    : 0;
+        }
+    }
+
+    .info_bottom {
+        text-align: left;
+
+        .desc_bottom {
+            max-height : 46px;
+            padding    : 16px 15px 0 15px;
+            line-height: 22px;
+            font-size  : 16px;
+            color      : #333;
+            overflow   : hidden;
+        }
+
+        .name_bottom {
+            padding      : 0 15px;
+            margin-top   : 5px;
+            font-size    : 13px;
+            height       : 20px;
+            white-space  : nowrap;
+            overflow     : hidden;
+            text-overflow: ellipsis;
+            color        : #999;
+        }
+
+        .message {
+            padding: 7px 15px 11px 15px;
+
+            .price {
+                float        : left;
+                color        : #ff3300;
+                max-width    : 90px;
+                white-space  : nowrap;
+                overflow     : hidden;
+                text-overflow: ellipsis;
+                height       : 30px;
+                line-height  : 30px;
+                font-size    : 16px;
+            }
+
+            .collect {
+                float        : right;
+                max-width    : 69px;
+                white-space  : nowrap;
+                overflow     : hidden;
+                text-overflow: ellipsis;
+                color        : #ccc;
+                height       : 30px;
+                line-height  : 30px;
+            }
+
+            .comment {
+                float        : right;
+                max-width    : 69px;
+                white-space  : nowrap;
+                overflow     : hidden;
+                text-overflow: ellipsis;
+                color        : #ccc;
+                height       : 30px;
+                line-height  : 30px;
+            }
+
+            .pageviews {
+                float        : right;
+                max-width    : 69px;
+                white-space  : nowrap;
+                overflow     : hidden;
+                text-overflow: ellipsis;
+                color        : #ccc;
+                height       : 30px;
+                line-height  : 30px;
+            }
+        }
+    }
+}
+
+.fa {
+    font-size: .18rem;
+}

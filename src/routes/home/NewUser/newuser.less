@@ -1,0 +1,27 @@
+@import '../../../assets/style/border.less';
+
+.category_wrap ul {
+    overflow: hidden;
+}
+
+.new_user_wrap {
+    padding   : 0;
+    margin    : 0;
+    border-top: none;
+}
+
+.category_wrap li {
+    float     : left;
+    width     : 25%;
+    text-align: center;
+    height    : 1.4rem;
+    .border-1px(#bbb, bottom);
+    .border-1px(#bbb, right);
+    -webkit-box-sizing: border-box;
+    box-sizing        : border-box;
+}
+
+.category_wrap .new_user_wrap li {
+    width : 100%;
+    height: auto;
+}

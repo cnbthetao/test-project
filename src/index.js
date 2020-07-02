@@ -1,5 +1,5 @@
-import dva from 'dva';
-import './index.css';
+import dva from 'dva'
+import './index.css'
 import './utils/rem'
 import './assets/style/reset.less'
 // 1. Initialize

@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-import { Icon, NavBar } from "antd-mobile";
 import "./index.less";
 export default function Tab(props) {
   const [flag, setFlag] = useState(false);
@@ -8,13 +7,22 @@ export default function Tab(props) {
 
   const [searchFlag, setSearchFlag] = useState(false);
 
+  const [searchShow, setSearchShowFlag] = useState(false)
   useEffect(() => {
-    //! 监控路由
     const { pathname } = props.location;
     if (pathname !== "/home") {
       setFlag(true);
     } else {
       setFlag(false);
+    }
+  });
+
+  useEffect(() => {
+    const { pathname } = props.location;
+    if (pathname == "/search") {
+      setSearchShowFlag(true)
+    } else {
+      setSearchShowFlag(false)
     }
   });
 
@@ -62,14 +70,38 @@ export default function Tab(props) {
   });
 
   useEffect(() => {
-    // const { pathname } = props.location;
-    // if (pathname === '/home'){
-    //   setSearchFlag(true)
-    // } else {
-    //   setSearchFlag(false)
-    // }
+    const { pathname } = props.location;
+    if (pathname === '/home') {
+      setSearchFlag(true)
+    } else {
+      setSearchFlag(false)
+    }
   });
-
+  if (searchShow) {
+    return (
+      <header style={{background:'#fff',borderBottom: '1px solid #eee'}}>
+        <div className="col_left ">
+          <i
+            onClick={back}
+            style={{ color: "#0092d8", fontSize: ".28rem" }}
+            className="fa fa-angle-left"
+          />
+        </div>
+        <div className="col_search">
+          <form>
+            <input type="text" placeholder="请输入要搜索的内容" ></input>
+          </form>
+        </div>
+        <div className="col_right ">
+          <button>搜索</button>
+        </div>
+      </header>
+    )
+  }
+  function goSearch() {
+    const { push } = props.history;
+    push("/search");
+  }
   function back() {
     const { goBack } = props.history;
     goBack();
@@ -78,14 +110,6 @@ export default function Tab(props) {
   function goHome() {
     const { push } = props.history;
     push("/home");
-  }
-
-  if (searchFlag) {
-    return (
-      <header>
-        <input />
-      </header>
-    );
   }
 
   return (
@@ -98,6 +122,7 @@ export default function Tab(props) {
         />
       )}
       <h3> {title} </h3>
+      {searchFlag && <i class="fa fa-search" style={{ color: '#fff', fontSize: '.2rem' }} onClick={goSearch}></i>}
       {flag && (
         <i
           onClick={goHome}

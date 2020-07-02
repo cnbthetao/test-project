@@ -2,11 +2,12 @@ import TabBar from "../tabbar/index";
 import Tab from "../tab/index";
 import React, { lazy, Suspense, Fragment } from "react";
 import { Route, Switch, Redirect, withRouter } from "dva/router";
-const Home = lazy(() => import("../../routes/Home"));
-const Categorys = lazy(() => import("../../routes/Categorys"));
-const Car = lazy(() => import("../../routes/Car"));
-const Mine = lazy(() => import("../../routes/Mine"));
-const NoFind = lazy(() => import("../../routes/NoFind"));
+const Home = lazy(() => import("../../routes/home/Home"));
+const Categorys = lazy(() => import("../../routes/category/Categorys"));
+const Car = lazy(() => import("../../routes/car/Car"));
+const Mine = lazy(() => import("../../routes/mine/Mine"));
+const Search = lazy(() => import("../../routes/search/Search"));
+const NoFind = lazy(() => import("../../routes/notfound/NoFind"));
 class RouterComp extends React.Component {
   state = {
     routes: [
@@ -25,6 +26,10 @@ class RouterComp extends React.Component {
       {
         path: "/mine",
         component: Mine,
+      },
+      {
+        path: "/search",
+        component: Search,
       },
       {
         path: "",
