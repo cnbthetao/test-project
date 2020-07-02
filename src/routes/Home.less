@@ -1,0 +1,108 @@
+.massage {
+    font-size  : .12rem;
+    color      : rgb(255, 255, 255);
+    text-align : center;
+    box-sizing : border-box;
+    background : rgba(0, 0, 0, 0.6);
+    width      : 100%;
+    padding    : 0px .16rem;
+    overflow   : hidden;
+    display    : block;
+    visibility : visible;
+    line-height: .32rem;
+    max-height : .32rem;
+
+    .leftIcon {
+        display        : block;
+        float          : left;
+        height         : .14rem;
+        width          : .14rem;
+        margin         : .08rem 0 0 -.14rem;
+        position       : relative;
+        left           : .12rem;
+        background     : url(https://pic.midea.cn/h5/pic/202003/5e82a4f850743.png) no-repeat;
+        background-size: 100%;
+    }
+
+    .midMsg {
+        box-sizing   : border-box;
+        text-align   : justify;
+        float        : left;
+        width        : 100%;
+        padding      : 0px .16rem;
+        white-space  : nowrap;
+        text-overflow: ellipsis;
+        overflow     : hidden;
+        font-size    : .12rem;
+    }
+
+    .rightIcon {
+        float       : left;
+        width       : .18rem;
+        margin-right: -100%;
+        position    : relative;
+        right       : .1rem;
+        display     : block;
+
+        .fa .fa-angle-down {
+            display     : block;
+            transition  : all 0.2s ease 0s;
+            border-width: 0px 0px 1px 1px;
+            border-color: rgb(255, 255, 255);
+            border-style: solid;
+            transform   : rotate(-45deg);
+            margin      : .05rem 0px 0px .02rem;
+            font-size   : .18rem;
+        }
+    }
+}
+
+// .allMsg {
+//     font-size  : 12px;
+//     color      : rgb(255, 255, 255);
+//     text-align : center;
+//     box-sizing : border-box;
+//     background : rgba(0, 0, 0, 0.6);
+//     width      : 100%;
+//     padding    : 0px 16px;
+//     overflow   : hidden;
+//     display    : block;
+//     visibility : visible;
+//     line-height: 16px;
+//     max-height : none;
+// }
+
+// .showMsg {
+//     box-sizing   : border-box;
+//     text-align   : justify;
+//     float        : left;
+//     width        : 100%;
+//     padding      : .08rem .16rem;
+//     white-space  : initial;
+//     text-overflow: initial;
+//     overflow     : initial;
+// }
+.slider-decorator-0 {
+    position  : absolute;
+    bottom    : .1rem !important;
+    width     : 100%;
+    text-align: center;
+}
+
+.am-carousel-wrap {
+    height: .2rem;
+    bottom: .1rem;
+    left  : 0;
+    width : 100%;
+
+    .am-carousel-wrap-dot {
+        height  : .1rem;
+        position: relative;
+        bottom  : .35rem;
+
+        span {
+            height: .1rem;
+            width : .1rem;
+        }
+    }
+}
