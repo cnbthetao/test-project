@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        li {
+            list-style: none;
+        }
+
+        body,
+        html {
+            height: 100%;
+            width: 100%;
+        }
+
+        .confirm {
+            width: 200px;
+            height: 150px;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            margin: -75px 0 0 -100px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+        }
+
+        .ok {
+            background: green
+        }
+
+        .fail {
+            background: red;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="app">
+        <input type="text" v-model="val">
+        <button @click='add'>添加</button>
+        <ul>
+            待完成：
+            <li v-for='(item,index) in todos' :key="item.id">
+                <!-- <input type="checkbox" > -->
+                <button :class="[item.flag?'ok':'fail']" @click="changeflag(index)">√</button>
+                <span>{{item.text}}</span>
+                <button @click='del(index)'>删除</button>
+            </li>
+        </ul>
+        <ul>已完成:
+            <li v-for='(data,index) in okarr' :key="data.id">
+                <span>{{data.text}}</span>
+                <button @click='del1(index)'>删除</button>
+            </li>
+        </ul>
+
+        </ul>
+        <div class="confirm" v-if='confirmflag'>
+            <p>你所删除的任务为完成，确定删除么？</p>
+            <button @click='confirm()'>确定</button>
+            <button @click='closeconfirm'>取消</button>
+        </div>
+    </div>
+    <script src="vue.js"></script>
+    <script>
+        const vm = new Vue({
+            el: '#app',
+            data: {
+                todos: [],
+                val: '',
+                isfinish: false,
+                confirmflag: false,
+                activeindex: 0,
+                okarr: []
+            },
+            methods: {
+                add() {
+                    if (this.val !== '') {
+                        this.todos.push({
+                            id: this.todos.length,
+                            text: this.val,
+                            flag: false
+                        })
+                    }
+                    this.val = ''
+                },
+                del(index) {
+                    if (this.todos[index].flag) {
+                        this.todos.splice(index, 1)
+                    } else {
+                        this.confirmshow()
+                        this.activeindex = index
+                    }
+                },
+                // changeflag(index) {
+                //     this.todos[index].flag = !this.todos[index].flag
+                //     if (this.todos[index].flag === true) {
+                //         this.okarr.push({
+                //                     id: this.okarr.length,
+                //                     text: this.todos[index].text,
+                //                     flag: this.todos.flag
+                //                 })
+                //         // this.okarr.forEach(ele => {
+                //         //     if (!ele.text == this.todos[index].text) {
+                //         //         this.okarr.push({
+                //         //             id: this.okarr.length,
+                //         //             text: this.todos[index].text,
+                //         //             flag: this.todos.flag
+                //         //         })
+                //         //     }
+                //         // });
+                //     }
+                // },
+                changeflag(index) {
+                    this.todos[index].flag = !this.todos[index].flag
+                    if (this.todos[index].flag === true) {
+                        this.okarr.push({
+                            id: this.okarr.length,
+                            text: this.todos[index].text,
+                            flag: this.todos.flag
+                        })
+                    }
+                    this.todos.splice(index, 1)
+                },
+
+                okarr1(index) {
+                    console.log(this.okarr[index]);
+                    if (this.okarr[index].flag === false) {
+                        this.okarr.splice(index, 1)
+                    }
+                },
+                del1(index) {
+                    this.okarr.splice(index, 1)
+                },
+                confirmshow() {
+                    this.confirmflag = true
+                },
+                closeconfirm() {
+                    this.confirmflag = false
+                },
+                confirm() {
+                    this.todos.splice(this.activeindex, 1)
+                    this.closeconfirm()
+                },
+
+            }
+        })
+    </script>
+</body>
+
+</html>

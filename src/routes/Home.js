@@ -44,11 +44,10 @@ export default function Home() {
         {data.map(val => (
           <a
             key={val}
-            href="http://www.alipay.com"
             style={{ display: 'inline-block', width: '100%', height: imgHeight }}
           >
             <img
-              src={`https://zos.alipayobjects.com/rmsportal/${val}.png`}
+              src={``}
               alt=""
               style={{ width: '100%', verticalAlign: 'top' }}
               onLoad={() => {
