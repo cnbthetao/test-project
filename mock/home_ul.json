@@ -1,0 +1,194 @@
+[
+    {
+        "navList": [
+            {
+                "id": 1,
+                "url": "https://pic.midea.cn/h5/pic/201911/5b9200fe1358.png?x-oss-process=image/format,webp/quality,Q_90&@100Q.png",
+                "text": "空调"
+            },
+            {
+                "id": 2,
+                "url": "https://pic.midea.cn/h5/pic/201911/2a6fa030a146.png?x-oss-process=image/format,webp/quality,Q_90&@100Q.png",
+                "text": "冰箱"
+            },
+            {
+                "id": 3,
+                "url": "https://pic.midea.cn/h5/pic/201911/c777a686d5a1.png?x-oss-process=image/format,webp/quality,Q_90&@100Q.png",
+                "text": "洗衣机"
+            },
+            {
+                "id": 4,
+                "url": "https://pic.midea.cn/h5/pic/202003/609961fa99d1.png?x-oss-process=image/format,webp/quality,Q_90&@100Q.png",
+                "text": "厨房小电器"
+            },
+            {
+                "id": 5,
+                "url": "https://pic.midea.cn/h5/pic/201911/35611857f825.png?x-oss-process=image/format,webp/quality,Q_90&@100Q.png",
+                "text": "生活家电"
+            },
+            {
+                "id": 6,
+                "url": "https://pic.midea.cn/h5/pic/202003/5f0cca7e1732.png?x-oss-process=image/format,webp/quality,Q_90&@100Q.png",
+                "text": "电风扇"
+            },
+            {
+                "id": 7,
+                "url": "https://pic.midea.cn/h5/pic/201911/3ca5532032dc.png?x-oss-process=image/format,webp/quality,Q_90&@100Q.png",
+                "text": "热水器/净水机"
+            },
+            {
+                "id": 8,
+                "url": "https://pic.midea.cn/h5/pic/202003/698efe45e8d5.png?x-oss-process=image/format,webp/quality,Q_90&@100Q.png",
+                "text": "家装及配件周边"
+            }
+        ],
+        "swiperList": [
+            {
+                "id": 1,
+                "url": "https://pic.midea.cn/h5/pic/202006/089537b137cd.jpg?x-oss-process=image/format,webp/quality,Q_90&@100Q.jpg"
+            },
+            {
+                "id": 2,
+                "url": "https://pic.midea.cn/h5/pic/202007/ffbdcf304e66.jpg?x-oss-process=image/format,webp/quality,Q_90&@100Q.jpg"
+            },
+            {
+                "id": 3,
+                "url": "https://pic.midea.cn/h5/pic/202005/f32d356bb904.jpg?x-oss-process=image/format,webp/quality,Q_90&@100Q.jpg"
+            },
+            {
+                "id": 4,
+                "url": "https://pic.midea.cn/h5/pic/202006/c279c061ae76.jpg?x-oss-process=image/format,webp/quality,Q_90&@100Q.jpg"
+            },
+            {
+                "id": 5,
+                "url": "https://pic.midea.cn/h5/pic/202006/708988a53cbd.jpg?x-oss-process=image/format,webp/quality,Q_90&@100Q.jpg"
+            },
+            {
+                "id": 6,
+                "url": "https://pic.midea.cn/h5/pic/202006/29ca21bdb03b.jpg?x-oss-process=image/format,webp/quality,Q_90&@100Q.jpg"
+            },
+            {
+                "id": 7,
+                "url": "https://pic.midea.cn/h5/pic/202005/39830441ed03.jpg?x-oss-process=image/format,webp/quality,Q_90&@100Q.jpg"
+            },
+            {
+                "id": 8,
+                "url": "https://pic.midea.cn/h5/pic/202006/49ccbbe0791f.jpg?x-oss-process=image/format,webp/quality,Q_90&@100Q.jpg"
+            }
+        ],
+        "newUserList": [
+            {
+                "id": 1,
+                "url": "https://pic.midea.cn/h5/pic/202005/959508511d08.gif@100Q.gif"
+            }
+        ],
+        "ActivityCenterList": [
+            {
+                "id": 1,
+                "imgSrc": "https://pic.midea.cn/h5/pic/202006/243515a0cdde.jpg?x-oss-process=image/format,webp/quality,Q_90&@100Q.jpg"
+            },
+            {
+                "id": 2,
+                "imgSrc": "https://pic.midea.cn/h5/pic/202006/b1e0cd3d550d.png?x-oss-process=image/format,webp/quality,Q_90&@100Q.png"
+            },
+            {
+                "id": 3,
+                "imgSrc": "https://pic.midea.cn/h5/pic/202006/7e170045d6c2.png?x-oss-process=image/format,webp/quality,Q_90&@100Q.png"
+            },
+            {
+                "id": 4,
+                "imgSrc": "https://pic.midea.cn/h5/pic/201907/d1a45f86b3b7.png?x-oss-process=image/format,webp/quality,Q_90&@100Q.png"
+            }
+        ],
+        "topDataList": [
+            {
+                "id": 1,
+                "src": "https://pic.midea.cn/h5/pic/202006/d1784dce0d9a.jpg?x-oss-process=image/format,webp/quality,Q_90&@100Q.jpg",
+                "title": "美的智能家电专区",
+                "coupon": "领券直减150元"
+            }
+        ],
+        "bottomDataList": [
+            {
+                "id": 1,
+                "src": "https://pic.midea.cn/h5/pic/201912/769dff30acc7.png?x-oss-process=image/format,webp/quality,Q_90&@100Q.png",
+                "introduction": "快速冷暖变频空调 智能WIFI",
+                "modelNumber": "家用空调套机KFR-26GW/WCBN8A3@",
+                "price": "1899.00",
+                "pageviews": "47万",
+                "comment": "919",
+                "collect": "583"
+            },
+            {
+                "id": 2,
+                "src": "https://pic.midea.cn/h5/pic/202005/c71df6511a7e.png?x-oss-process=image/format,webp/quality,Q_90&@100Q.png",
+                "introduction": "直驱电机 洗烘一体 WIFI智控",
+                "modelNumber": "洗衣机MD100VT717WDY5",
+                "price": "4099.00",
+                "pageviews": "8万",
+                "comment": "90",
+                "collect": "172"
+            },
+            {
+                "id": 3,
+                "src": "https://pic.midea.cn/h5/pic/202007/ecbbf03016f2.jpg?x-oss-process=image/format,webp/quality,Q_90&@100Q.jpg",
+                "introduction": "扫地机器人 M7 LDS激光导航 扫拖一体",
+                "modelNumber": "扫地机器人M7",
+                "price": "1499.00",
+                "pageviews": "9729",
+                "comment": "25",
+                "collect": "17"
+            },
+            {
+                "id": 4,
+                "src": "https://pic.midea.cn/h5/pic/202006/faa4a2e88511.jpg?x-oss-process=image/format,webp/quality,Q_90&@100Q.jpg",
+                "introduction": "风冷无霜 智能远程调温保鲜",
+                "modelNumber": "冰箱BCD-450WKZM(E)",
+                "price": "2599.00",
+                "pageviews": "9万",
+                "comment": "109",
+                "collect": "171"
+            },
+            {
+                "id": 5,
+                "src": "https://pic.midea.cn/h5/pic/202005/ad1baa216ca7.jpg?x-oss-process=image/format,webp/quality,Q_90&@100Q.jpg",
+                "introduction": "阿尔法一根芯净水机 智显水龙头",
+                "modelNumber": "净水机MRO1890-400G",
+                "price": "1998.00",
+                "pageviews": "4万",
+                "comment": "16",
+                "collect": "27"
+            },
+            {
+                "id": 6,
+                "src": "https://pic.midea.cn/h5/pic/202005/dfcb2bc3e852.jpg?x-oss-process=image/format,webp/quality,Q_90&@100Q.jpg",
+                "introduction": "16L即热零冷水 抑菌洗 WIFI智控",
+                "modelNumber": "燃气热水器JSQ30-TD7",
+                "price": "2299.00",
+                "pageviews": "3万",
+                "comment": "36",
+                "collect": "68"
+            },
+            {
+                "id": 7,
+                "src": "https://pic.midea.cn/h5/pic/202006/c018bc4a131b.jpg?x-oss-process=image/format,webp/quality,Q_90&@100Q.jpg",
+                "introduction": "7片劲风 智能感温落地扇",
+                "modelNumber": "电风扇SAD35EC",
+                "price": "199.00",
+                "pageviews": "2万",
+                "comment": "47",
+                "collect": "18"
+            },
+            {
+                "id": 8,
+                "src": "https://pic.midea.cn/h5/pic/202005/4ed3a03bff44.jpg?x-oss-process=image/format,webp/quality,Q_90&@100Q.jpg",
+                "introduction": "21m³智能声控自清洗烟灶套",
+                "modelNumber": "烟灶套装JZT-Q39+CXW-280-JC502",
+                "price": "2399.00",
+                "pageviews": "8473",
+                "comment": "5",
+                "collect": "13"
+            }
+        ]
+    }
+]

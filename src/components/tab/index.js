@@ -122,7 +122,7 @@ export default function Tab(props) {
         />
       )}
       <h3> {title} </h3>
-      {searchFlag && <i class="fa fa-search" style={{ color: '#fff', fontSize: '.2rem' }} onClick={goSearch}></i>}
+      {searchFlag && <i className="fa fa-search" style={{ color: '#fff', fontSize: '.2rem' }} onClick={goSearch}></i>}
       {flag && (
         <i
           onClick={goHome}

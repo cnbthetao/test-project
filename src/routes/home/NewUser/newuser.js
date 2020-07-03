@@ -1,15 +1,13 @@
 import React, { Component } from 'react'
 import './newuser.less'
 export default class NewUser extends Component {
-    state = {
-        newUserImgList: ['https://pic.midea.cn/h5/pic/202005/959508511d08.gif@100Q.gif']
-    }
     render() {
+        const data = this.props.home.ulData['newUserList']
         return (
             <div>
                 <ul className="new_user_wrap">
                     {
-                        this.state.newUserImgList.map((item, index) => <li key={index}><img src={item} style={{ width: '100%' }} /></li>)
+                        data && data.map(item => <li key={item.id}><img src={item.url} style={{ width: '100%' }} /></li>)
                     }
                 </ul>
             </div>
