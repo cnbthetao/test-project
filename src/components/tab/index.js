@@ -59,6 +59,11 @@ export default function Tab(props) {
         path: "/mine/reg",
         text: "注册",
       },
+      {
+        id: 7,
+        path: "/detail/*",
+        text: "详情",
+      }
     ];
 
     arr.forEach((item) => {

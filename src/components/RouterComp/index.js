@@ -8,6 +8,7 @@ const Car = lazy(() => import("../../routes/car/Car"));
 const Mine = lazy(() => import("../../routes/mine/Mine"));
 const Search = lazy(() => import("../../routes/search/Search"));
 const NoFind = lazy(() => import("../../routes/notfound/NoFind"));
+const Detail = lazy(() => import("../../routes/detail/Detail"));
 class RouterComp extends React.Component {
   state = {
     routes: [
@@ -16,7 +17,7 @@ class RouterComp extends React.Component {
         component: Home,
       },
       {
-        path: "/cates",
+        path: "/cates/:id",
         component: Categorys,
       },
       {
@@ -30,6 +31,10 @@ class RouterComp extends React.Component {
       {
         path: "/search",
         component: Search,
+      },
+      {
+        path: "/detail/:id",
+        component: Detail,
       },
       {
         path: "",
