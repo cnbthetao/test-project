@@ -6,7 +6,7 @@ import { setCookie } from './cookie';
 //! 创建请求实例
 const ins: AxiosInstance = axios.create({
   // baseURL: env.dev,
-  timeout: 4000
+  timeout: 10000
 })
 
 //! 拦截器
