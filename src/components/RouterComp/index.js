@@ -46,12 +46,13 @@ class RouterComp extends React.Component {
     return (
       <Fragment>
         <Suspense fallback={() => <div>Loading</div>}>
-        <Tab {...this.props} />
+          <Tab {...this.props} />
           <Switch>
             <Redirect from="/" exact to="/home" />
-            {this.state.routes.map((item, index) => ( <Route key={index} path={item.path} exact component={item.component}/>))}
+            <Redirect from='/cates' exact to='/cates/1' />
+            {this.state.routes.map((item, index) => (<Route key={index} path={item.path} exact component={item.component} />))}
           </Switch>
-        <TabBar {...this.props}/>
+          <TabBar {...this.props} />
         </Suspense>
       </Fragment>
     );
