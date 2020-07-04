@@ -4,8 +4,8 @@ import './SpecialRecommendation.less'
 export default class SpecialRecommendation extends Component {
     renderItem_top = () => {
         const data = this.props.home.ulData['topDataList']
-        return data && data.map(item => <Link to='/cates'>
-            <li key={item.id} className="active_box">
+        return data && data.map(item => <Link  key={item.id} to='/cates' tag="li">
+            <li className="active_box">
                 <img src={item.src} />
                 <div className="info">
                     <p className="desc">{item.title}</p>
@@ -16,8 +16,8 @@ export default class SpecialRecommendation extends Component {
     }
     renderItem_bottom = () => {
         const data = this.props.home.ulData['bottomDataList']
-        return data && data.map(item => <Link to={`/detail/${item.id + 9}`}>
-            <li key={item.id} className="product">
+        return data && data.map(item => <Link  key={item.id} to={`/detail/${item.id + 9}`} tag="li">
+            <li className="product">
                 <div className="pic">
                     <img src={item.src} />
                 </div>

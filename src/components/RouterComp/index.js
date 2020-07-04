@@ -51,7 +51,7 @@ class RouterComp extends React.Component {
             <Redirect from="/" exact to="/home" />
             {this.state.routes.map((item, index) => ( <Route key={index} path={item.path} exact component={item.component}/>))}
           </Switch>
-        <TabBar />
+        <TabBar {...this.props}/>
         </Suspense>
       </Fragment>
     );

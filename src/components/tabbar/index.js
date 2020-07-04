@@ -1,11 +1,11 @@
-import React from "react";
-import { Link, NavLink } from "react-router-dom";
+import React, { useState, useEffect } from "react";
+import { NavLink } from "react-router-dom";
 import "./index.less";
 import '../../assets/style/reset.less'
 /*
  * NavLink是激活导航    Link是跳转导航
  */
-export default function TabBar() {
+export default function TabBar(props) {
   const navs = [
     {
       id: 1,
@@ -32,8 +32,17 @@ export default function TabBar() {
       iconName: "fa-user-o",
     },
   ];
+  const [tabBarShowFlag, setTabBarShowFlag] = useState(true)
+  useEffect(() => {
+    const { pathname } = props.location
+    if (pathname.indexOf('/detail/') >= 0) {
+      setTabBarShowFlag(false)
+    } else {
+      setTabBarShowFlag(true)
+    }
+  })
   return (
-    <ul className="footer">
+    tabBarShowFlag && <ul className="footer">
       {navs.map((item) => (
         <li key={item.id}>
           <NavLink to={item.path} activeClassName="active">

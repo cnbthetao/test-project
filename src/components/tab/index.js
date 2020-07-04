@@ -8,6 +8,8 @@ export default function Tab(props) {
   const [searchFlag, setSearchFlag] = useState(false);
 
   const [searchShow, setSearchShowFlag] = useState(false)
+
+  const [titleShow, setTitleShow] = useState(true)
   useEffect(() => {
     const { pathname } = props.location;
     if (pathname !== "/home") {
@@ -16,7 +18,16 @@ export default function Tab(props) {
       setFlag(false);
     }
   });
-
+  useEffect(() => {
+    const { pathname } = props.location;
+    if (pathname.indexOf('/login/') >= 0) {
+      setTitleShow(false);
+    } else if (pathname.indexOf('/register/') >= 0) {
+      setTitleShow(false);
+    } else {
+      setTitleShow(true);
+    }
+  });
   useEffect(() => {
     const { pathname } = props.location;
     if (pathname == "/search") {
@@ -61,7 +72,7 @@ export default function Tab(props) {
       },
       {
         id: 7,
-        path: "/detail/*",
+        path: "/detail",
         text: "详情",
       }
     ];
@@ -76,6 +87,14 @@ export default function Tab(props) {
 
   useEffect(() => {
     const { pathname } = props.location;
+    if (pathname.indexOf('/cates/') >= 0) {
+      setTitle('分类')
+    } else if (pathname.indexOf('/detail/') >= 0) {
+      setTitle('详情')
+    }
+  });
+  useEffect(() => {
+    const { pathname } = props.location;
     if (pathname === '/home') {
       setSearchFlag(true)
     } else {
@@ -84,7 +103,7 @@ export default function Tab(props) {
   });
   if (searchShow) {
     return (
-      <header style={{background:'#fff',borderBottom: '1px solid #eee'}}>
+      <header style={{ background: '#fff', borderBottom: '1px solid #eee' }}>
         <div className="col_left ">
           <i
             onClick={back}
@@ -118,7 +137,7 @@ export default function Tab(props) {
   }
 
   return (
-    <header>
+    titleShow && <header>
       {flag && (
         <i
           onClick={back}
