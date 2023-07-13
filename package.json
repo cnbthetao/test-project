@@ -9,7 +9,7 @@
   "dependencies": {
     "antd-mobile": "^2.3.3",
     "babel-plugin-import": "^1.13.0",
-    "cnpm": "^6.1.1",
+    "cnpm": "^9.2.0",
     "dva": "^2.4.1",
     "link": "^0.1.5",
     "react": "^16.2.0",
